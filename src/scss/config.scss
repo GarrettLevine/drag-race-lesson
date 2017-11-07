@@ -15,10 +15,3 @@ $secondary-invert: $blue-invert;
 
 $font-serif: 'Nunito', sans-serif;
 $family-primary: $font-serif;
-
-// Add new color variables to the color map.
-$addColors: (
-  "secondary": ($blue, $blue-invert),
-  "primary": ($pink, $pink-invert),
-);
-$colors: map-merge($colors, $addColors);
