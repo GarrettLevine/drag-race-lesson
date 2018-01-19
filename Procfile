@@ -1,1 +1,1 @@
-web: npm run build-prod
+web: yarn install; npm run build-prod
