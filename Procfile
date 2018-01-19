@@ -1,1 +1,1 @@
-web: npm install; npm run build-prod; node server.js
+web: npm run build-prod;

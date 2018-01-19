@@ -1,7 +1,7 @@
 {
-  "name": "react-starter",
+  "name": "drace-race-lesson",
   "version": "1.0.0",
-  "description": "small tiny react starter",
+  "description": "a project for learning react with routing",
   "main": "webpack.config.js",
   "dependencies": {
     "bulma": "^0.6.1",
@@ -32,7 +32,7 @@
     "watch": "npm run watch-frontend",
     "clean": "rm -rf public && mkdir -p public",
     "watch-frontend": "NODE_ENV='development' ./node_modules/.bin/webpack-dev-server --config webpack.dev.config.js --inline",
-    "build-prod": "npm run clean && webpack -p --config ./webpack.prod.config.js"
+    "build-prod": "npm run clean && webpack -p --config ./webpack.prod.config.js && node server.js"
   },
   "author": "",
   "license": "ISC"
