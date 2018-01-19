@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "a project for learning react with routing",
   "main": "webpack.config.js",
+  "engines": {
+    "node": "9.3.0"
+  },
   "dependencies": {
     "bulma": "^0.6.1",
     "classnames": "^2.2.5",
