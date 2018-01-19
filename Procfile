@@ -1,0 +1,1 @@
+web: npm install; npm run build-prod; node server.js

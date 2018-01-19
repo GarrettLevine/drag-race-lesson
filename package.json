@@ -31,7 +31,8 @@
     "start": "npm run clean && npm run watch",
     "watch": "npm run watch-frontend",
     "clean": "rm -rf public && mkdir -p public",
-    "watch-frontend": "NODE_ENV='development' ./node_modules/.bin/webpack-dev-server --config webpack.dev.config.js --inline"
+    "watch-frontend": "NODE_ENV='development' ./node_modules/.bin/webpack-dev-server --config webpack.dev.config.js --inline",
+    "build-prod": "npm run clean && webpack -p --config ./webpack.prod.config.js"
   },
   "author": "",
   "license": "ISC"

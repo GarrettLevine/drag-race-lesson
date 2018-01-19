@@ -15,25 +15,10 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].[chunkhash].js',
-    publicPath: 'http://localhost:8080/',
+    publicPath: '/public',
   },
   resolve: {
     extensions: ['.js', '.jsx']
-  },
-  devServer: {
-    stats: {
-      chunkModules: false,
-      colors: true,
-      path: path.resolve(__dirname, 'public'),
-    },
-    contentBase: `${__dirname}/public`,
-    publicPath: 'http://localhost:8080/',
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
-      'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization',
-    },
-    historyApiFallback: true,
   },
   module: {
     rules: [
