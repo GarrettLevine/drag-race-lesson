@@ -2,9 +2,9 @@
   "name": "drace-race-lesson",
   "version": "1.0.0",
   "description": "a project for learning react with routing",
-  "main": "webpack.config.js",
   "engines": {
     "node": "8.x.x",
+    "npm": "3.10.3",
     "yarn": "1.3.2"
   },
   "dependencies": {
