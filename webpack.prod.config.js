@@ -13,9 +13,9 @@ module.exports = {
     vendor: VENDOR_LIBS,
   },
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'public'),
     filename: '[name].[chunkhash].js',
-    publicPath: '/public',
+    publicPath: '/',
   },
   resolve: {
     extensions: ['.js', '.jsx']
@@ -46,7 +46,7 @@ module.exports = {
       'process.env': {
         'NODE_ENV': JSON.stringify('production')
       }
-    })
+    }),
     new webpack.optimize.CommonsChunkPlugin({
       names: ['vendor'],
     }),
